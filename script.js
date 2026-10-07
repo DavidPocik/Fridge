@@ -1,8 +1,8 @@
 // =========================================================
 // 1. NASTAVENIA TELEGRAMU
 // =========================================================
-const BOT_TOKEN = 964201492:AAGM4Po6C_02e1CX46OT_NzSHVuuQA-wsds; // Token z @BotFather
-const CHAT_ID = 8834376176; // ID z @userinfobot
+const BOT_TOKEN = '8964201492:AAGM4Po6C_02e1CX46OT_NzSHVuuQA-wsds'; // Token z @BotFather
+const CHAT_ID = '8834376176'; // ID z @userinfobot
 
 // =========================================================
 // 2. LOGIKA ODOSIELANIA
