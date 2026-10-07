@@ -13,11 +13,35 @@
             <a href="index.html">Čo je v chladničke</a>
               <a href="CoTrebaKupit.html">Čo treba kúpiť</a>
         </header>
-<section class = "list">
-    <ul>
-        
-    </ul>
-</section>
+<div class="form-container">
+    <h2>Nová objednávka</h2>
+
+    <form id="orderForm">
+      <!-- Meno -->
+      <div class="form-group">
+        <label for="meno">Meno a Priezvisko:</label>
+        <input type="text" id="meno" placeholder="Ján Novák" required>
+      </div>
+
+      <!-- Telefón -->
+      <div class="form-group">
+        <label for="telefon">Telefónne číslo:</label>
+        <input type="tel" id="telefon" placeholder="+421 900 000 000" required>
+      </div>
+
+      <!-- Správa -->
+      <div class="form-group">
+        <label for="sprava">Správa / Objednávka:</label>
+        <textarea id="sprava" placeholder="Napr. 1x Pizza Margerita, bez cibule" rows="4" required></textarea>
+      </div>
+
+      <!-- Tlačidlo -->
+      <button type="submit">Odoslať na Telegram</button>
+    </form>
+  </div>
+
+  <!-- Prepojenie na samostatný JavaScript súbor -->
+  <script src="script.js"></script>
 
     </body>
 </html>
