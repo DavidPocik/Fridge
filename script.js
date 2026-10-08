@@ -12,13 +12,11 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
 
   // Načítanie hodnôt z inputov
   const meno = document.getElementById('meno').value;
-  const telefon = document.getElementById('telefon').value;
   const sprava = document.getElementById('sprava').value;
 
   // Formátovanie textu správy
-  const textSpravy = `🍕 *NOVÁ OBJEDNÁVKA*\n\n` +
+  const textSpravy = `🛒 *Čo treba kúpiť*\n\n` +
                       `👤 *Meno:* ${meno}\n` +
-                      `📞 *Tel:* ${telefon}\n` +
                       `📝 *Správa:* ${sprava}`;
 
   // URL pre Telegram API
@@ -37,7 +35,7 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
   .then(response => response.json())
   .then(data => {
     if (data.ok) {
-      alert('Objednávka bola úspešne odoslaná!');
+      alert('Správa bola úspešne odoslaná!');
       document.getElementById('orderForm').reset();
     } else {
       alert('Chyba pri odosielaní: ' + data.description);
