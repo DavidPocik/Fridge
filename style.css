@@ -38,3 +38,43 @@ text-decoration:underline;
      4px 4px 5px 0px rgba(0,0,0,.1);
    outline: none;
 }
+
+
+
+.orderForm{
+display: flex;
+justify-content: left;
+}
+
+button{
+    border-radius: 5px;
+    width: 150px;
+    height:50px;
+    background-color: rgb(255, 255, 0);
+}
+
+button:hover{
+background-color: #978600;
+
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+
+.form-group label{
+display: block;
+    align-items: top;
+    margin: 10px;
+
+}
+
+.form-group input{
+    margin-bottom: 40px;
+}
+
+
+.form-group textarea{
+    margin-bottom: 40px;
+}
